@@ -12,11 +12,11 @@ class App extends Component {
             searchfield: ""
         }
     }
-    onSearchChange = (e) => {
-        const filteredRobots = this.state.robots.filter(robots => {
-            return robots.name.toLowerCase().includes(this.state.searchfield.toLowerCase())
-            console.log(filteredRobots);
+    onSearchChange = (event) => {
+        const filteredRobots = this.state.robots.filter(robot => {
+            return robot.name.toLowerCase().includes
         })
+        console.log(filteredRobots);
     }
     render() {
         return(
